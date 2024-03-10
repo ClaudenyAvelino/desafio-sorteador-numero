@@ -32,3 +32,16 @@ function sortear(){
     
     alert(sorteados);
 }
+
+## Exibindo os valores em forma de texto
+
+Vamos novamente ao index.html, onde verificaremos onde está este texto. 
+
+><label class="texto__paragrafo">Números sorteados: nenhum até agora</label>
+
+Porém, ao invés do texto "Números sorteados: nenhum até agora", mudaremos para Números sorteados: ${sorteados}, passando a array dos números sorteados. Contudo, como estamos concatenando com outra variável, precisamos deixar toda a tag <label> </label> entre crases.
+
+## Corrigindo o sorteio de números repetidos
+
+Acessando novamente o arquivo app.js, dentro da função sortear(), temos o for(). Nesse for(), temos a variável numero, que recebe o obterNumeroAleatorio().
+Então, sorteados é a nossa variável array, e todo array no JavaScript tem essa função chamada includes(), que devolve um booleano: true (verdadeiro) ou false (falso). O que esse while() está dizendo é: "enquanto a variável sorteados tem incluído esse numero". Enquanto for true, vamos entrar no nosso loop e pedir para ele fazer um novo sorteio. Porque, se isso der verdadeiro, é porque aquele número que sorteado já está dentro do nosso array, o que não queremos.
