@@ -3,7 +3,7 @@
 <h2>/</h2>
 
 <h2>🔖 Sobre</h2>
-<p>Projeto utilizado nos cursos de lógica de programação da Alura.</p>
+<p>Projeto utilizado nos cursos de lógica de programação.</p>
 
 ## 🚀 Tecnologias
 <div>
@@ -14,3 +14,6 @@
 <h2>Time</h2>
 
 [<img loading="lazy" src="https://avatars.githubusercontent.com/u/79340989?s=400&u=fcfb57bc9a07b8ce0eeae1195e243bb1cb56f6d8&v=4" width=115><br><sub>Claudeny Avelino</sub>](https://github.com/ClaudenyAvelino)
+
+## Adicionando a logica do jogo
+
