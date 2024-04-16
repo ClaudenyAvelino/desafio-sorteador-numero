@@ -15,8 +15,8 @@
 
 [<img loading="lazy" src="https://avatars.githubusercontent.com/u/79340989?s=400&u=fcfb57bc9a07b8ce0eeae1195e243bb1cb56f6d8&v=4" width=115><br><sub>Claudeny Avelino</sub>](https://github.com/ClaudenyAvelino)
 
-## Adicionando a logica do jogo
-
+### Adicionando a logica do jogo
+```
 function sortear(){
     let quantidade = parseInt(document.getElementById('quantidade').value);
     let de = parseInt(document.getElementById('de').value);
@@ -32,25 +32,25 @@ function sortear(){
     
     alert(sorteados);
 }
-
-## Exibindo os valores em forma de texto
+```
+### Exibindo os valores em forma de texto
 
 Vamos novamente ao index.html, onde verificaremos onde está este texto. 
-
-><label class="texto__paragrafo">Números sorteados: nenhum até agora</label>
-
+```
+<label class="texto__paragrafo">Números sorteados: nenhum até agora</label>
+```
 Porém, ao invés do texto "Números sorteados: nenhum até agora", mudaremos para Números sorteados: ${sorteados}, passando a array dos números sorteados. Contudo, como estamos concatenando com outra variável, precisamos deixar toda a tag <label> </label> entre crases.
 
-## Corrigindo o sorteio de números repetidos
+### Corrigindo o sorteio de números repetidos
 
 Acessando novamente o arquivo app.js, dentro da função sortear(), temos o for(). Nesse for(), temos a variável numero, que recebe o obterNumeroAleatorio().
 Então, sorteados é a nossa variável array, e todo array no JavaScript tem essa função chamada includes(), que devolve um booleano: true (verdadeiro) ou false (falso). O que esse while() está dizendo é: "enquanto a variável sorteados tem incluído esse numero". Enquanto for true, vamos entrar no nosso loop e pedir para ele fazer um novo sorteio. Porque, se isso der verdadeiro, é porque aquele número que sorteado já está dentro do nosso array, o que não queremos.
 
-## Lógica do botão de reiniciar
+### Lógica do botão de reiniciar
 
 Para entender a diferença entre ambos, vamos conferir os botões no arquivo index.html:
 No arquivo CSS do nosso projeto, após container__botoes, podemos encontrar container__botao e container__botao-desabilitado:
 
-## Mudando a classe do botão
+### Mudando a classe do botão
 
 ortanto, depois de exibir o resultado, no resultado.innerHTML, vamos chamar alguém para trocar a classe do botão. Pode ser um método, por exemplo, alterarStatusBotao().
