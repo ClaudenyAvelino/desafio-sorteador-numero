@@ -1,6 +1,5 @@
 <h1>Desafio sorteador de número secreto</h1>
-<a href="https">Clique aqui e acesse o jogo</a>
-<h2>/</h2>
+<a href="https://jogo-beige-six.vercel.app/">Clique aqui e acesse o jogo</a>
 
 <h2>🔖 Sobre</h2>
 <p>Projeto utilizado nos cursos de lógica de programação.</p>
